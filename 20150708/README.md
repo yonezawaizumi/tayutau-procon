@@ -107,3 +107,12 @@
 * 一応、すごい本は 1年前にこなしたとはいえ、Haskell 全然わかってません
 * 文字列が文字のリストなので、すごく簡単に書けるんだなぁと感動
 * 当初、mapM_ を使わないで出力しようとして、I/Oモナド初心者罠に見事にハマりました（return () に辿り着けず、putStr "" とか書いていたアフォ）
+
+### [professor.scala](https://github.com/yonezawaizumi/tayutau-procon/blob/master/20150708/professor.scala) (マイ師匠作)
+
+* (この項 7/9 追記)
+* と、以上を公開したところ、私のプログラミングのお師匠さんからソッコーで寄せられましたよ Scala コードが
+* なんとワンライナー化できるメソッド定義なし、さすがお師匠さん
+* メソッドなんか使わなくても match 式で事足りる
+* 私レベルの超初心者はついつい「いかにも関数型」なカッコつけをしてしまってズッコケました、というみっともない話
+* [procon.scala](https://github.com/yonezawaizumi/tayutau-procon/blob/master/20150708/procon.scala) では `foreach(x => println(x))` としてましたが、引数と戻り値の型がわかりきっているときは省略可能なので `foreach(println)` でよい
